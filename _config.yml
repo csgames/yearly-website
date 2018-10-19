@@ -25,6 +25,11 @@ google_analytics_key:  ## put YOUR key here to enable tracking! (blank to disabl
 collections:
   - competitions
 
+event_year: 2019
+event_start_date: 2019-03-20
+event_end_date: 2019-03-23
+organizer_university: ACME University
+
 ### template colors, used site-wide via css ###
 colors:
   black:     '#111111'
