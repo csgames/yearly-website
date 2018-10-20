@@ -5,16 +5,22 @@ color: black
 fa-icon: toggle-on
 ---
 
-<div class="container">
-<div class="row">
+
 {% for competition in site.competitions %}
-<div class="five columns">
-  <h4>{{ competition.name }}</h4>
-    <p>{{ competition.content  }}</p>
-    <p>Languages/Skills: {{ competition.programming_language }}</p>
-    <p>Participant: {{ competition.participant }}</p>
-    <p>Weight: {{ competition.weight }}</p>
+{% assign mod = forloop.index | modulo: 2 %}
+
+{% if mod == 1 %}
+<div class="row">
+{% endif %}
+  <div class="one-half column">
+    <h4>{{ competition.name }}</h4>
+      <p>{{ competition.content  }}</p>
+      <p>Languages/Skills: {{ competition.programming_language }}</p>
+      <p>Participant: {{ competition.participant }}</p>
+      <p>Weight: {{ competition.weight }}</p>
+  </div>
+{% if mod == 0 %}
 </div>
-  {% endfor %}
-</div>
-</div>
+{% endif %}
+{% endfor %}
+

@@ -1,5 +1,5 @@
 ---
-name: Artificial Intelligence 2
+name: Artificial Intelligence2
 programming_language: Java,Python
 participant: 2
 weight: 10
