@@ -1,14 +1,13 @@
 ---
 title: "competitions"
 bg: orange
-color: black
+color: white
 fa-icon: toggle-on
 ---
 
 
 {% for competition in site.competitions %}
 {% assign mod = forloop.index | modulo: 2 %}
-
 {% if mod == 1 %}
 <div class="row">
 {% endif %}
