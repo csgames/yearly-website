@@ -1,7 +1,7 @@
 ---
 title: "competitions"
 bg: orange
-color: black
+color: white
 fa-icon: toggle-on
 ---
 
